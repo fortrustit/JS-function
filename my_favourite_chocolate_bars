@@ -1,0 +1,52 @@
+//using a function to filter out chocolate bars made by Mars
+//iterate the name of the chocolate bar made by mars
+var chocolateBars = [
+    { name: "Galaxy", manufacturer: "Mars" },
+    { name: "Snickers", manufacturer: "Mars" },
+    { name: "Crunchie", manufacturer: "Cadbury" },
+    { name: "Aero", manufacturer: "Nestle" },
+    { name: "M&Ms", manufacturer: "Mars" },
+    { name: "Chunky", manufacturer: "Nestle" },
+    { name: "Double decker", manufacturer: "Cadbury" }
+];
+
+function filterChocolate(item) {
+    var chocolate = [];
+    for (var i = 0; i < chocolateBars.length; i++) {
+        if (chocolateBars[i].manufacturer === item) {
+            chocolate.push(chocolateBars[i].name);
+        }
+    }
+    return chocolate;
+}
+
+var filter = "Mars";
+var filterResult = filterChocolate(filter).join(', ');
+var output = filterResult + "are made by " + filter;
+console.log(output);
+//using a function to filter out chocolate bars made by Mars
+//iterate the name of the chocolate bar made by mars
+var chocolateBars = [
+    { name: "Galaxy", manufacturer: "Mars" },
+    { name: "Snickers", manufacturer: "Mars" },
+    { name: "Crunchie", manufacturer: "Cadbury" },
+    { name: "Aero", manufacturer: "Nestle" },
+    { name: "M&Ms", manufacturer: "Mars" },
+    { name: "Chunky", manufacturer: "Nestle" },
+    { name: "Double decker", manufacturer: "Cadbury" }
+];
+
+function filterChocolate(item) {
+    var chocolate = [];
+    for (var i = 0; i < chocolateBars.length; i++) {
+        if (chocolateBars[i].manufacturer === item) {
+            chocolate.push(chocolateBars[i].name);
+        }
+    }
+    return chocolate;
+}
+
+var filter = "Mars";
+var filterResult = filterChocolate(filter).join(', ');
+var output = filterResult + "are made by " + filter;
+console.log(output);
