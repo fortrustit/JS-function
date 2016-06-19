@@ -1,0 +1,62 @@
+function feedCat(){
+  return "Kibble, tinned food and water";
+}
+
+//A function can have properties and has a link back to its constructor method
+// console.log(feedCat instanceof Object);
+// feedCat();
+// console.log(feedCat);
+
+//A function can have properties and has a link back to its constructor method
+// console.log(Object.getOwnPropertyNames(feedCat));
+// feedCat.food = "kibble";
+//console.log(feedCat.food);
+//console.log(feedCat.constructor);
+// console.log(feedCat.hasOwnProperty("food"));
+// console.log(Object.getOwnPropertyNames(feedCat));
+
+//You can store the function in a variable
+// var eveningChore = feedCat;
+// console.log(eveningChore());
+// console.log(eveningChore);
+// console.log(eveningChore.constructor);
+
+//You can pass the function as a parameter to another function
+// function doEveningChores(chores){
+//     for(var x=0; x<chores.length; x++){
+//       return chores[x]();
+//     }       
+// }
+// console.log(doEveningChores([feedCat]));
+
+//You can return the function from a function
+// function tonightChores(){
+//     return feedCat;
+// }
+// var tonight = tonightChores();
+// console.log(tonight());
+
+//for more reference see http://adripofjavascript.com/blog/drips/variable-and-function-hoisting
+// var name1 = "Baggins";
+// var expected = (function () {
+//     // Outputs: "Original name was undefined"
+//     console.log("Original name was " + name1);
+
+//     var test = "Underhill";
+
+//     // Outputs: "New name is Underhill"
+//     return "New name is " + test;
+// })();
+// console.log(expected);
+
+// var name2 = "Coco"
+// var unexpected = (function () {
+//     // Outputs: "Original name was undefined"
+//     console.log("Original name was " + name2);
+
+//     var name2 = "Underhill";
+
+//     // Outputs: "New name is Underhill"
+//     return "New name is " + name2;
+// })();
+// console.log(unexpected);
